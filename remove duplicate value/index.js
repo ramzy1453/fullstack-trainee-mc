@@ -1,9 +1,7 @@
 function removeIndex(array , index){
     let New = []
     for(let i = 0 ; i < array.length ; i++){
-        if(i !== index){
-            New.push(array[i])
-        }
+        if(i !== index) New.push(array[i])
     }
     return New
 }
