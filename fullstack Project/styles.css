@@ -2,35 +2,19 @@
 body {
     margin: 0;
     background-color: #0B0016;
-    display: flex;
-    flex-direction: column;
 }
-
 ::-webkit-scrollbar {
     width: 15px;
 }
-
-
-/* Track */
-
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: black;
 }
-
-
-/* Handle */
-
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #FFBD00;
 }
-
-
-/* Handle on hover */
-
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #E05FCE;
 }
-
 
 /********************* start header************* */
 
