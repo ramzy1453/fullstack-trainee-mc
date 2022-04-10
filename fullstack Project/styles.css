@@ -36,6 +36,21 @@ header {
     z-index: 1000;
 }
 
+@media screen and (max-width: 650px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    header img {
+        margin: 10px 0;
+    }
+    .intro {
+        top: 100px;
+    }
+}
+
 header img {
     width: 100px;
     margin-left: 20px;
