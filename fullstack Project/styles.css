@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Mitr:wght@200;700&display=swap');
+body {
+    margin: 0;
+    background-color: #0B0016;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: black;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #FFBD00;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #E05FCE;
+}
+
+
+/********************* start header************* */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-family: 'Barlow', sans-serif;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+header .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .link-container .link,
+.mc,
+.button {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: .3s ease all;
+    letter-spacing: 2px;
+}
+
+header .link-container .link:hover {
+    color: #E05FCE;
+}
+
+header .link-container .mc {
+    color: #FFBD00;
+}
+
+header .link-container .button {
+    background-color: #FFBD00;
+    color: black;
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #FFBD00;
+    cursor: pointer;
+}
+
+header .link-container .button:hover {
+    background-color: transparent;
+    color: #FFBD00;
+}
+
+header .link-container .button i {
+    margin-left: 5px;
+}
+
+
+/************************** end header  ****************/
+
+
+/************************** start intro  ****************/
+
+.intro {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mitr', sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.intro img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+}
+
+.intro .first {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.intro .first .title {
+    color: #FFBD00;
+    font-size: 5em;
+}
+
+.intro .first .desc {
+    color: white;
+    font-size: 5em;
+    width: 30%
+}
+
+.intro .second {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: -50px 50px 50px 0;
+}
+
+.intro .second .title {
+    color: #E05FCE;
+    font-size: 2.2em;
+}
+
+.intro .second .desc {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.intro .second .button {
+    border: 2px #FFBD00 solid;
+    color: #FFBD00;
+    padding: 10px 15px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+}
+
+.intro .second .button:hover {
+    background-color: #FFBD00;
+    color: white;
+}
+
+
+/************************** end intro  ****************/
+
+
+/************************** start info  ****************/
+
+.info {
+    display: flex;
+    padding: 50px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+.info .first {
+    flex: 2;
+    font-family: 'Mitr', sans-serif;
+}
+
+.info .first .title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.info .first .button {
+    border: 2px #FFBD00 solid;
+    color: #FFBD00;
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    top: 30px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+}
+
+.info .first .button:hover {
+    background-color: #FFBD00;
+    color: white;
+}
+
+.info .second {
+    flex: 3;
+}
+
+.info p {
+    font-size: 1.5em;
+}
+
+.info .num-container {
+    display: flex;
+    font-size: 2em;
+    justify-content: space-around;
+}
+
+.info .num-container .one {}
+
+.info .num-container .one .num {
+    font-size: 1.5em;
+    color: #E05FCE;
+    font-weight: bold;
+    ;
+}
+
+
+/************************** end info  ****************/
+
+
+/************************** start celeb  ****************/
+
+.celeb {
+    display: flex;
+    font-size: 1.5em;
+    padding: 50px;
+    font-family: "Mitr", sans-serif;
+}
+
+.celeb img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.celeb .second {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.celeb .second .title {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+.celeb .second .title span {
+    color: #FFBD00;
+}
+
+
+/************************** end celce  ****************/
+
+
+/************************** start speker  ****************/
+
+.speaker {
+    font-family: "Mitr", sans-serif;
+    padding: 50px;
+}
+
+.speaker .first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.speaker .first .title {
+    color: white;
+    font-size: 2em;
+}
+
+.speaker .first .button {
+    border: 2px #FFBD00 solid;
+    color: #FFBD00;
+    padding: 15px;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+}
+
+.speaker .first .button:hover {
+    background-color: #FFBD00;
+    color: white;
+}
+
+.speaker .conter-speakers {
+    display: flex;
+}
+
+.speaker .conter-speakers .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.speaker .conter-speakers .one img {
+    width: 80%;
+}
+
+.speaker .conter-speakers .one .name {
+    font-size: 1.5em;
+    color: #FFBD00;
+}
+
+.speaker .conter-speakers .one .work {}
+
+
+/******************TAB BAR****************************/
+
+
+/*******************************************************/
+
+
+/*******************************************************/
+
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px 0;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.tab button:hover {
+    color: #FFBD00;
+    border-bottom: 1px #FFBD00 solid;
+}
+
+.tab button .active {
+    border-bottom: 1px #FFBD00 solid;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 24px;
+    border-top: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    padding-bottom: 60px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.tabcontent:nth-child(2),
+.tabcontent:nth-child(3) {
+    display: none;
+}
+
+.tabcontent .box-hour-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 5px;
+    border-bottom: 1px dashed #ccc;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    animation: opacity-anime 1.5s ease forwards;
+}
+
+@keyframes opacity-anime {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabcontent .box-hour-total .first {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabcontent .box-hour-total .first .name {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.tabcontent .box-hour-total .first .title {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.tabcontent .box-hour-total .time {
+    font-size: 28px;
+}
+
+.big-tab {
+    margin: 30px 100px;
+}
+
+
+/*************cards/*/
+
+.conter-cards {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.conter-cards .one-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #0e0e0e;
+    margin: 0 40px;
+}
+
+.conter-cards .one-card .first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.conter-cards .one-card .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.conter-cards .one-card .p {
+    font-size: 18px;
+}
+
+.one-card a {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.global-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.global-cards .global-first {
+    display: flex;
+    padding: 50px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global-cards .global-first .global-title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.global-cards .global-first .global-button {
+    border: 2px #FFBD00 solid;
+    color: #FFBD00;
+    padding: 15px;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.global-cards .global-first .global-button:hover {
+    background-color: #FFBD00;
+    color: white;
+}
+
+
+/******map****************/
+
+.map {
+    width: 100%;
+    margin: 112px 0 0 0;
+}
+
+.spacer-sponsers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.conter-sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #0e0e0e;
+    color: white;
+    font-family: "Lato", sans-serif;
+    padding: 30px 70px;
+    width: 70%;
+    margin: 112px 0 0 0;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.conter-sponsors .title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.conter-sponsors .conter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.conter-sponsors .conter img {
+    margin: 0 15px;
+    width: 150px;
+    height: 70px;
+}
+
+
+/********nihaya hbb***************/
+
+.final {
+    display: flex;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 10px;
+    margin: 112px 130px 0 130px;
+}
+
+.final .left {
+    font-size: 18px;
+    flex: 1;
+    margin: 20px;
+}
+
+.final .left img {
+    width: 100px;
+}
+
+.final .middle {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.final .middle .title {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.final .middle .mail {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.final .middle .mail:hover {
+    color: rgb(233, 233, 233);
+}
+
+.final .middle .telephone:hover {
+    color: #E05FCE;
+}
+
+.final .middle .telephone {
+    color: #FFBD00;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.final .right {
+    flex: 1;
+    margin: 10px;
+}
+
+.final .right input {
+    width: 295px;
+    padding: 14px 26px;
+    border: 1px #FFBD00 solid;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1.2em;
+}
+
+.final .right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.final .right .btn-submit {
+    padding: 14px 26px;
+    background-color: #FFBD00;
+    border: 1px #FFBD00 solid;
+    margin: 12px 0;
+    transition: .3s ease all;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.final .right .btn-submit i {
+    margin-left: 10px;
+}
+
+.final .right .btn-submit:hover {
+    border: 1px #FFBD00 solid;
+    background: transparent;
+    color: white;
+}
+
+.final .right .title {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 80px 80px 0 80px;
+    padding: 24px;
+    border-top: 1px white solid;
+    text-align: center;
+    color: white;
+    font-size: 19.2px;
+    font-family: 'Barlow', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/************************/
+
+.floating-container {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    margin: 35px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-container:hover {
+    height: 300px;
+}
+
+.floating-container:hover .floating-button {
+    -webkit-transform: translatey(5px);
+    transform: translatey(5px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.floating-container .floating-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FFBD00;
+    bottom: 0;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 100;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.floating-container .floating-button i {
+    font-size: 17px;
+}
+
+
+/*********/
+
+
+/* The Modal (background) */
+
+.modalDialog {
+    position: fixed;
+    font-family: 'Barlow', sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog .modalSecond {
+    width: 80%;
+    height: 450px;
+    padding: 20px;
+    position: relative;
+    margin: 60px auto;
+    border-radius: 10px;
+    background: #0a0a0a;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modalSecond .submit-modal {
+    background-color: #FFBD00;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s ease all;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    padding: 14px 26px;
+    color: black;
+    border: 1px #FFBD00 solid;
+}
+
+.modalSecond .submit-modal:hover {
+    background-color: transparent;
+    color: #FFBD00;
+    border: 1px #FFBD00 solid;
+}
+
+.modalSecond .title {
+    font-size: 41px;
+    font-family: "Mitr", sans-serif;
+    font-weight: bold;
+}
+
+.modalSecond .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalSecond .form .row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.modalSecond .form .row .conter-input {
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.modalSecond .form .row .conter-input .name {
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.modalSecond .form .row .conter-input input {
+    padding: 14px 26px;
+    border: 1px solid #FFBD00;
+    color: #FFBD00;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.modalSecond .close {
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 15px;
+    width: 26px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modalSecond .close i {
+    font-size: 1.3em;
+    transition: .2s ease all;
+}
+
+.modalSecond .close i:hover {
+    color: rgb(185, 185, 185);
+}
+
+
+/*********************/
