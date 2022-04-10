@@ -3,18 +3,23 @@ body {
     margin: 0;
     background-color: #0B0016;
 }
+
 ::-webkit-scrollbar {
     width: 15px;
 }
+
 ::-webkit-scrollbar-track {
     background: black;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #FFBD00;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #E05FCE;
 }
+
 
 /********************* start header************* */
 
@@ -168,6 +173,15 @@ header .link-container .button i {
     color: white;
 }
 
+@media screen and (max-width: 884px) {
+    .info {
+        flex-direction: column;
+    }
+    .info .first {
+        margin-bottom: 25px;
+    }
+}
+
 .info .first {
     flex: 2;
     font-family: 'Mitr', sans-serif;
@@ -230,6 +244,14 @@ header .link-container .button i {
     font-family: "Mitr", sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+    .celeb {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .celeb img {
     width: 50%;
     margin-right: 20px;
@@ -290,6 +312,21 @@ header .link-container .button i {
 
 .speaker .conter-speakers {
     display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .conter-speakers {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .conter-sponsors .conter {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .final {
+        flex-direction: column;
+    }
 }
 
 .speaker .conter-speakers .one {
